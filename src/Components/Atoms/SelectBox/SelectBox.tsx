@@ -6,7 +6,7 @@ export type SelectBoxItemProps = {
     ItemName:string;
 }
 
-type SelectBoxProps = {
+export type SelectBoxProps = {
     LabelID:string;
     Label:string;
     Items:SelectBoxItemProps[];
@@ -18,7 +18,6 @@ export const SelectBox = (props:SelectBoxProps) => {
         <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
             <InputLabel id={props.LabelID}>{props.Label}</InputLabel>
             <Select labelId={props.LabelID} onChange={props.onChange} label={props.Label}>
-                <MenuItem value={10}>Ten</MenuItem>
                 {props.Items.map((v, idx)=>{return(<MenuItem value={v.ItemValue}>{v.ItemName}</MenuItem>)})}
             </Select>
         </FormControl>

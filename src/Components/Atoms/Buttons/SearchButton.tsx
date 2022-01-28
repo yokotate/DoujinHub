@@ -3,7 +3,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import { Button } from '@mui/material';
 
-type SearchButtonProps = {
+export type SearchButtonProps = {
     Title?:string;
     Disabled?:""|"disabled"
     Size?: "large" | "small" | "medium";
