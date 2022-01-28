@@ -12,9 +12,6 @@ type SearchButtonProps = {
 
 export const SearchButton = (props:SearchButtonProps) => {
     return (
-        // <IconButton color={props.color} size={props.size}>
-        //     <SearchIcon />{props.Title}
-        // </IconButton>
         <Button color={props.Color} size={props.Size} variant="contained" startIcon={<SearchIcon />}>
             {props.Title}
         </Button>
