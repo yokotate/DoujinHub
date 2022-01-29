@@ -22,6 +22,6 @@ export const Primary = Template.bind({});
 Primary.args = {
     SelectBoxStatus:SelectStatus,
     SearchButtonStatus:SearchButtonStatus,
-    TextFieldText:"サークル名か本のタイトルを入力してください"
+    TextFieldText:"検索"
 };
 
