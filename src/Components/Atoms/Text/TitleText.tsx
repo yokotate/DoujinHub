@@ -1,3 +1,4 @@
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 
 type TitleTextProps = {
@@ -6,8 +7,8 @@ type TitleTextProps = {
 
 export const TitleText = (props:TitleTextProps) => {
     return (
-        <h1>
-            {props.title}
-        </h1>
+        <Box sx={{flexGrow: 1}}>
+            <Typography variant='h4' component="div" sx={{ flexGrow: 1 }}>{props.title}</Typography>
+        </Box>
     )
 }

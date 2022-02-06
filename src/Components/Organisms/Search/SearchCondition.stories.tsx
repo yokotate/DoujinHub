@@ -5,7 +5,7 @@ import { SelectBoxItemProps, SelectBoxProps } from '../../Atoms/SelectBox/Select
 import { SearchButtonProps } from '../../Atoms/Buttons/SearchButton';
 
 export default {
-    title: 'Molecules/Search/SearchConditions',
+    title: 'Organisms/Search/SearchConditions',
     component: SearchConditions,
 } as ComponentMeta<typeof SearchConditions>;
 
@@ -16,7 +16,7 @@ const ListItems:SelectBoxItemProps[] = [];
 ListItems.push({ItemValue:"CircleName", ItemName:"サークル名"});
 ListItems.push({ItemValue:"BookTitle", ItemName:"本タイトル"});
 const SelectStatus:SelectBoxProps = {LabelID: "ListItem", Label: "検索対象", Items: ListItems,onChange:(e)=>{}};
-const SearchButtonStatus:SearchButtonProps = {};
+const SearchButtonStatus:SearchButtonProps = {onClick:()=>{}};
 
 export const Primary = Template.bind({});
 Primary.args = {
